@@ -1,0 +1,8 @@
+<a routerLink="/">Home</a>
+<a routerLink="/user">User</a>
+
+<router-outlet></router-outlet>
+<div *ngIf="visible; else odd">this is toggle div</div>
+<button (click)="changeDiv()">change</button>
+<ng-template #odd>this is odd div</ng-template>
+
